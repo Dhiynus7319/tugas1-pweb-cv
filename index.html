@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsaqifa Dhiya Ul Haq - Profil Pribadi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-dalam wadah">
+            <a class="brand" href="#atas">Tsaqifa Dhiya</a>
+            <div class="header-kanan">
+                <nav aria-label="Navigasi utama">
+                    <a href="#tentang">Tentang</a>
+                    <a href="#pendidikan">Pendidikan</a>
+                    <a href="#proyek">Proyek</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#keahlian">Keahlian</a>
+                </nav>
+                <button id="tema" class="tombol-tema" type="button" aria-pressed="false">Mode Gelap</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="atas" class="wadah">
+
+        <section class="hero">
+            <div class="hero-teks">
+                <h1>Tsaqifa Dhiya Ul Haq</h1>
+                <p class="peran">Mahasiswa Sistem Informasi, Universitas Dian Nuswantoro</p>
+                <p>
+                    Saya tertarik pada bisnis digital, UI/UX, dan cara sebuah
+                    proses bisnis dibangun menjadi sistem yang berguna.
+                </p>
+                <a class="tombol" href="#proyek">Lihat proyek</a>
+            </div>
+            <div class="avatar" role="img" aria-label="Avatar inisial Tsaqifa Dhiya Ul Haq">TD</div>
+        </section>
+
+        <div class="susunan-konten">
+
+            <div class="kolom-utama">
+                <section id="tentang" class="kartu">
+                    <h2>Tentang Saya</h2>
+                    <p>
+                        Halo, saya Tsaqifa Dhiya Ul Haq, mahasiswa Program Studi Sistem
+                        Informasi. Saya memilih jurusan ini karena tertarik mendalami
+                        dunia bisnis digital, UI/UX, serta memahami bagaimana sebuah
+                        proses bisnis dibangun dari awal hingga menjadi solusi yang
+                        bermanfaat. Melalui bidang ini, saya ingin terus belajar
+                        mengembangkan kemampuan analisis dan perancangan yang
+                        menjembatani teknologi dengan kebutuhan bisnis.
+                    </p>
+                </section>
+
+                <section id="pendidikan" class="kartu">
+                    <h2>Riwayat Pendidikan</h2>
+                    <div class="tabel-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tahun</th>
+                                    <th>Jenjang</th>
+                                    <th>Nama Sekolah / Institusi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2022 - 2024</td>
+                                    <td>SMK</td>
+                                    <td>SMK Raden Umar Said Kudus</td>
+                                </tr>
+                                <tr>
+                                    <td>2025 - sekarang</td>
+                                    <td>S1</td>
+                                    <td>Universitas Dian Nuswantoro</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="proyek" class="kartu">
+                    <h2>Proyek Perkuliahan</h2>
+                    <div class="proyek-daftar">
+                        <article class="proyek">
+                            <h3>Tugas 1: Profil Statis HTML5</h3>
+                            <p>Halaman profil dengan elemen semantik, tabel, dan daftar.</p>
+                        </article>
+                        <article class="proyek">
+                            <h3>Tugas 2: Desain Ulang Responsif</h3>
+                            <p>Layout modern dengan Flexbox, Grid, dan media queries.</p>
+                        </article>
+                        <article class="proyek">
+                            <h3>Tugas 3: Interaktivitas JavaScript</h3>
+                            <p>Mode gelap, FAQ, dan tombol kembali ke atas dengan manipulasi DOM dan event handling.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="faq" class="kartu">
+                    <h2>Pertanyaan Umum</h2>
+                    <div class="faq">
+                        <div class="faq-item">
+                            <button class="faq-tanya" type="button" aria-expanded="false" aria-controls="jawab-1">Apa yang sedang saya pelajari?</button>
+                            <p id="jawab-1" class="faq-jawab" hidden>Saya sedang mempelajari dasar pengembangan web, yaitu HTML5, CSS, dan JavaScript, lewat mata kuliah Pemrograman Web Dasar.</p>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-tanya" type="button" aria-expanded="false" aria-controls="jawab-2">Apa minat utama saya?</button>
+                            <p id="jawab-2" class="faq-jawab" hidden>Bisnis digital, UI/UX, dan cara sebuah proses bisnis dibangun menjadi sistem yang berguna.</p>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-tanya" type="button" aria-expanded="false" aria-controls="jawab-3">Bagaimana halaman ini dibuat?</button>
+                            <p id="jawab-3" class="faq-jawab" hidden>Struktur memakai HTML5 semantik, tampilan memakai CSS (Flexbox, Grid, media queries), dan interaksi memakai JavaScript (DOM dan event handling).</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="kolom-samping">
+                <section id="keahlian" class="kartu">
+                    <h2>Keahlian</h2>
+                    <ul>
+                        <li>HTML5 dan CSS dasar</li>
+                        <li>Flexbox, Grid, dan Responsive Design</li>
+                        <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+                        <li>Manajemen waktu</li>
+                    </ul>
+                </section>
+
+                <section class="kartu">
+                    <h2>Pengalaman Organisasi</h2>
+                    <ol>
+                        <li>Anggota OSIS (2022 - 2024)</li>
+                        <li>Panitia Acara Kampus (2024)</li>
+                    </ol>
+                </section>
+
+                <section class="kartu">
+                    <h2>Fokus Minat</h2>
+                    <ol>
+                        <li>Bisnis digital</li>
+                        <li>UI/UX</li>
+                        <li>Proses bisnis</li>
+                    </ol>
+                </section>
+            </aside>
+
+        </div>
+    </main>
+
+    <button id="ke-atas" class="tombol-atas" type="button" aria-label="Kembali ke atas" hidden>&uarr;</button>
+
+    <footer class="footer">
+        <p>&copy; 2026 Tsaqifa Dhiya Ul Haq. Dibuat untuk Tugas 3 - Pemrograman Web Dasar.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
