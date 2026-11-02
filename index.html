@@ -14,12 +14,16 @@
     <header class="header">
         <div class="header-dalam wadah">
             <a class="brand" href="#atas">Tsaqifa Dhiya</a>
-            <nav aria-label="Navigasi utama">
-                <a href="#tentang">Tentang</a>
-                <a href="#pendidikan">Pendidikan</a>
-                <a href="#proyek">Proyek</a>
-                <a href="#keahlian">Keahlian</a>
-            </nav>
+            <div class="header-kanan">
+                <nav aria-label="Navigasi utama">
+                    <a href="#tentang">Tentang</a>
+                    <a href="#pendidikan">Pendidikan</a>
+                    <a href="#proyek">Proyek</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#keahlian">Keahlian</a>
+                </nav>
+                <button id="tema" class="tombol-tema" type="button" aria-pressed="false">Mode Gelap</button>
+            </div>
         </div>
     </header>
 
@@ -92,6 +96,28 @@
                             <h3>Tugas 2: Desain Ulang Responsif</h3>
                             <p>Layout modern dengan Flexbox, Grid, dan media queries.</p>
                         </article>
+                        <article class="proyek">
+                            <h3>Tugas 3: Interaktivitas JavaScript</h3>
+                            <p>Mode gelap, FAQ, dan tombol kembali ke atas dengan manipulasi DOM dan event handling.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="faq" class="kartu">
+                    <h2>Pertanyaan Umum</h2>
+                    <div class="faq">
+                        <div class="faq-item">
+                            <button class="faq-tanya" type="button" aria-expanded="false" aria-controls="jawab-1">Apa yang sedang saya pelajari?</button>
+                            <p id="jawab-1" class="faq-jawab" hidden>Saya sedang mempelajari dasar pengembangan web, yaitu HTML5, CSS, dan JavaScript, lewat mata kuliah Pemrograman Web Dasar.</p>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-tanya" type="button" aria-expanded="false" aria-controls="jawab-2">Apa minat utama saya?</button>
+                            <p id="jawab-2" class="faq-jawab" hidden>Bisnis digital, UI/UX, dan cara sebuah proses bisnis dibangun menjadi sistem yang berguna.</p>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-tanya" type="button" aria-expanded="false" aria-controls="jawab-3">Bagaimana halaman ini dibuat?</button>
+                            <p id="jawab-3" class="faq-jawab" hidden>Struktur memakai HTML5 semantik, tampilan memakai CSS (Flexbox, Grid, media queries), dan interaksi memakai JavaScript (DOM dan event handling).</p>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -128,9 +154,13 @@
         </div>
     </main>
 
+    <button id="ke-atas" class="tombol-atas" type="button" aria-label="Kembali ke atas" hidden>&uarr;</button>
+
     <footer class="footer">
-        <p>&copy; 2026 Tsaqifa Dhiya Ul Haq. Dibuat untuk Tugas 2 - Pemrograman Web Dasar.</p>
+        <p>&copy; 2026 Tsaqifa Dhiya Ul Haq. Dibuat untuk Tugas 3 - Pemrograman Web Dasar.</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

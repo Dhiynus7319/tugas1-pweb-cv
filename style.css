@@ -12,6 +12,7 @@
     --garis: #d9e2f0;
     --aksen: #175cd3;
     --sorot: #f2b544;
+    --tombol: #175cd3;
     --font: "Plus Jakarta Sans", "Segoe UI", Arial, sans-serif;
 }
 
@@ -120,7 +121,7 @@ a:focus-visible {
 .tombol {
     display: inline-block;
     padding: 10px 22px;
-    background-color: var(--aksen);
+    background-color: var(--tombol);
     color: #fff;
     border-radius: 8px;
     text-decoration: none;
@@ -272,4 +273,133 @@ th, td {
     .proyek-daftar {
         grid-template-columns: minmax(0, 1fr);
     }
+}
+
+/* ===== Tugas 3: komponen interaktif ===== */
+body, .header, .kartu {
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.header-kanan {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 22px;
+}
+
+.tombol-tema {
+    padding: 6px 14px;
+    border: 1px solid var(--garis);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.tombol-tema:hover {
+    color: var(--aksen);
+    border-color: var(--aksen);
+}
+
+.tombol-tema:focus-visible,
+.faq-tanya:focus-visible {
+    outline: 3px solid var(--sorot);
+    outline-offset: 3px;
+}
+
+.faq-item + .faq-item {
+    border-top: 1px solid var(--garis);
+}
+
+.faq-tanya {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 14px 0;
+    border: 0;
+    background: none;
+    color: var(--ink);
+    font: inherit;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-tanya:hover {
+    color: var(--aksen);
+}
+
+.faq-tanya::after {
+    content: "+";
+    font-size: 1.3rem;
+    color: var(--aksen);
+}
+
+.faq-tanya[aria-expanded="true"]::after {
+    content: "\2212";
+}
+
+.faq-jawab {
+    padding-bottom: 14px;
+}
+
+/* ===== Mode gelap (class "gelap" dipasang oleh script.js pada body) ===== */
+body.gelap {
+    --ink: #e8eefc;
+    --kanvas: #0f1624;
+    --kartu: #1a2438;
+    --garis: #2c3a55;
+    --aksen: #8ab4f8;
+    --tombol: #2f6fd6;
+}
+
+body.gelap .footer {
+    background-color: #0a101c;
+}
+
+body.gelap .avatar {
+    background-color: #2a3b5c;
+}
+
+body.gelap .tombol:hover {
+    background-color: #4c83d7;
+}
+
+/* ===== Tombol kembali ke atas ===== */
+.tombol-atas {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 20;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--tombol);
+    color: #fff;
+    font: inherit;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 18px #17253b33;
+    transition: background-color 0.2s;
+}
+
+.tombol-atas[hidden] {
+    display: none;
+}
+
+.tombol-atas:hover {
+    background-color: var(--ink);
+    color: var(--kartu);
+}
+
+.tombol-atas:focus-visible {
+    outline: 3px solid var(--sorot);
+    outline-offset: 3px;
 }
